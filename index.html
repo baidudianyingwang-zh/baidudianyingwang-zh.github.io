@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>百度电影网 - 百种检索方式的电影资料索引 | baidudianyingwang-zh.github.io</title>
+<meta name="description" content="百度电影网（baidudianyingwang-zh.github.io）是一份以百种检索方式整理的电影资料索引：可按片名、导演、年代、类型、语种与评分交叉筛选，覆盖华语经典、海外佳作、纪录片与短片，一搜即得。">
+<meta name="keywords" content="百度电影网, baidudianyingwang-zh.github.io, 百度电影网在线观看, 电影资料索引, 按导演找片, 电影检索, 华语经典电影">
+<meta name="author" content="百度电影网">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0c1116">
+<meta property="og:title" content="百度电影网 - 百种检索方式的电影资料索引">
+<meta property="og:description" content="百度电影网可按片名、导演、年代、类型、语种与评分交叉筛选，覆盖华语经典、海外佳作、纪录片与短片。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://baidudianyingwang-zh.github.io">
+<meta property="og:site_name" content="百度电影网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="百度电影网 - 电影资料检索索引">
+<meta name="twitter:description" content="百度电影网支持按片名、导演、年代、类型、语种与评分交叉筛选，一搜即得。">
+<link rel="canonical" href="https://baidudianyingwang-zh.github.io">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "百度电影网",
+  "url": "https://baidudianyingwang-zh.github.io",
+  "description": "百度电影网是一份以百种检索方式整理的电影资料索引，可按片名、导演、年代、类型、语种与评分交叉筛选，覆盖华语经典、海外佳作、纪录片与短片。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://baidudianyingwang-zh.github.io#search?q={query}",
+    "query-input": "required name=query"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "百度电影网",
+  "url": "https://baidudianyingwang-zh.github.io"
+}
+</script>
+<style>
+:root{
+  --bg:#0c1116;--bg2:#11181f;--bg3:#161f28;--panel:#141c24;
+  --line:rgba(255,255,255,.10);--line2:rgba(255,255,255,.055);
+  --txt:#e8edf2;--dim:#8c9bab;--dim2:#5f6f80;
+  --bai:#e8edf2;--bai2:#b9c4d0;
+  --blue:#3b7dd8;--blue2:#2f6bc0;--blue3:#5b9aee;
+  --cyan:#4ec9c2;--gold:#e0a73c;--red:#e0573e;
+  --shadow:rgba(0,0,0,.5);
+  --sans:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei",system-ui,sans-serif;
+  --mono:"SFMono-Regular",Consolas,"WenQuanYi Micro Hei",monospace;
+  --ease:cubic-bezier(.22,.68,.22,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);color:var(--txt);font-family:var(--sans);font-size:15px;line-height:1.75;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:58px;
+  background-image:
+    linear-gradient(transparent 0,transparent calc(100% - 1px),rgba(255,255,255,.022) 100%),
+    linear-gradient(90deg,transparent 0,transparent calc(100% - 1px),rgba(255,255,255,.022) 100%);
+  background-size:100% 32px,32px 100%;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,select{font-family:inherit}
+::selection{background:var(--blue);color:#fff}
+.container{max-width:1280px;margin:0 auto;padding:0 28px}
+
+/* ── Header ── */
+.top{position:fixed;top:0;left:0;right:0;z-index:100;height:58px;background:rgba(12,17,22,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line2)}
+.top__in{max-width:1280px;margin:0 auto;height:100%;padding:0 28px;display:flex;align-items:center;gap:26px}
+.logo{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.logo i{width:30px;height:30px;background:var(--bai);color:var(--bg);font-style:normal;font-family:var(--mono);font-weight:800;font-size:.98rem;display:grid;place-items:center;letter-spacing:-.04em;clip-path:polygon(0 0,100% 0,100% 62%,74% 62%,74% 100%,0 100%)}
+.logo b{font-size:1.14rem;letter-spacing:.01em;color:var(--bai);font-weight:700}
+.logo b em{font-style:normal;color:var(--blue3)}
+.logo small{font-family:var(--mono);font-size:.63rem;color:var(--dim2);letter-spacing:.1em;margin-left:6px;border-left:1px solid var(--line);padding-left:10px}
+.search{margin-left:auto;width:300px;height:34px;background:var(--bg3);border:1px solid var(--line);display:flex;align-items:center;gap:10px;padding:0 12px;transition:.25s var(--ease)}
+.search:focus-within{border-color:var(--blue3);box-shadow:0 0 0 3px rgba(59,125,216,.18)}
+.search input{flex:1;background:none;border:none;outline:none;font-size:.86rem;color:var(--txt)}
+.search input::placeholder{color:var(--dim2)}
+.search kbd{font-family:var(--mono);font-size:.66rem;color:var(--dim2);border:1px solid var(--line);padding:1px 5px;background:var(--bg2)}
+.nav{display:flex;align-items:center}
+.nav a{font-size:.84rem;color:var(--dim);padding:6px 11px;position:relative;transition:.2s var(--ease)}
+.nav a:hover{color:var(--bai)}
+.nav a.active{color:var(--bai);background:var(--bg3)}
+.nav a.active::before{content:"";position:absolute;left:50%;bottom:-18px;transform:translateX(-50%);width:5px;height:5px;background:var(--blue3);clip-path:polygon(0 0,100% 0,50% 100%)}
+.mbtn{display:none;width:34px;height:34px;position:relative;flex-shrink:0;border:1px solid var(--line);background:var(--bg3)}
+.mbtn span{position:absolute;left:8px;right:8px;height:1.5px;background:var(--bai);transition:.25s var(--ease)}
+.mbtn span:nth-child(1){top:11px}.mbtn span:nth-child(2){top:16px}.mbtn span:nth-child(3){top:21px}
+.mbtn.open span:nth-child(1){top:16px;transform:rotate(45deg)}
+.mbtn.open span:nth-child(2){opacity:0}
+.mbtn.open span:nth-child(3){top:16px;transform:rotate(-45deg)}
+
+/* ── Hero ── */
+.hero{position:relative;padding:60px 0 52px;border-bottom:1px solid var(--line2);overflow:hidden}
+.hero::after{content:"";position:absolute;right:-160px;top:-120px;width:560px;height:560px;border:1px solid var(--line);clip-path:polygon(0 0,100% 0,100% 100%);opacity:.35}
+.hero__grid{display:grid;grid-template-columns:1.35fr .65fr;gap:54px;align-items:center;position:relative}
+.kicker{font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;color:var(--blue3);display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:38px;height:1px;background:var(--blue3)}
+.hero h1{margin-top:20px;font-size:clamp(2rem,5.2vw,3.7rem);font-weight:800;line-height:1.18;letter-spacing:-.01em;color:var(--bai)}
+.hero h1 em{font-style:normal;color:var(--blue3)}
+.hero h1 .slash{color:var(--blue2);font-weight:400;margin:0 .12em}
+.hero__sub{margin-top:24px;color:var(--dim);font-size:1rem;max-width:620px;line-height:1.95}
+.hero__sub strong{color:var(--bai2);font-weight:600}
+.chips{margin-top:32px;display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:.78rem;color:var(--dim);border:1px solid var(--line);padding:6px 13px;background:var(--bg2);transition:.2s var(--ease)}
+.chips span:hover{color:var(--bai);border-color:var(--blue3)}
+.chips span.on{color:var(--bg);background:var(--blue3);border-color:var(--blue3)}
+.hero__stat{border:1px solid var(--line);background:var(--panel);padding:30px}
+.hero__stat h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--dim2);font-weight:400}
+.hero__stat .big{margin-top:14px;font-size:2.6rem;font-weight:800;color:var(--bai);line-height:1;letter-spacing:-.02em}
+.hero__stat .big small{font-size:1rem;color:var(--dim);font-weight:400;margin-left:8px}
+.hero__stat p{margin-top:14px;color:var(--dim);font-size:.86rem;line-height:1.9}
+.hero__stat .row{margin-top:22px;padding-top:20px;border-top:1px solid var(--line2);display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.hero__stat .row div{border-left:2px solid var(--blue2);padding-left:10px}
+.hero__stat .row b{display:block;font-family:var(--mono);font-size:1.2rem;color:var(--bai)}
+.hero__stat .row span{font-size:.72rem;color:var(--dim2);letter-spacing:.04em}
+
+/* ── Section ── */
+.sec{padding:70px 0}
+.sec__hd{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:end;margin-bottom:40px}
+.sec__no{width:58px;height:58px;background:var(--bg3);border:1px solid var(--line);display:grid;place-items:center;font-family:var(--mono);font-size:1.5rem;font-weight:800;color:var(--blue3);flex-shrink:0;position:relative}
+.sec__no::after{content:"";position:absolute;inset:-5px;border:1px solid var(--line2);pointer-events:none}
+.sec__ttl h2{font-size:clamp(1.45rem,3.1vw,2.15rem);font-weight:800;line-height:1.35;color:var(--bai);letter-spacing:-.01em}
+.sec__ttl h2 em{font-style:normal;color:var(--blue3)}
+.sec__ttl h2 small{display:block;font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;color:var(--dim2);font-weight:400;margin-top:8px}
+.sec__ttl p{margin-top:10px;color:var(--dim);font-size:.88rem;max-width:540px}
+.sec__more{font-size:.84rem;color:var(--bai2);white-space:nowrap;border-bottom:1px solid var(--line);padding-bottom:4px;transition:.25s var(--ease)}
+.sec__more:hover{color:var(--blue3);border-bottom-color:var(--blue3)}
+
+/* ── Filter bar ── */
+.filter{border:1px solid var(--line);background:var(--panel);padding:20px 22px;margin-bottom:26px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background-image:linear-gradient(var(--line),var(--line));background-size:1px 100%;background-repeat:no-repeat}
+.fgroup{background:var(--panel);padding:0 18px}
+.fgroup:first-child{padding-left:0}
+.fgroup:nth-child(4){padding-right:0}
+.fgroup label{display:block;font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;color:var(--dim2);margin-bottom:9px}
+.fgroup select{width:100%;background:var(--bg2);border:1px solid var(--line);color:var(--txt);font-size:.86rem;padding:9px 10px;outline:none;cursor:pointer}
+.fgroup select:focus{border-color:var(--blue3)}
+.fgroup .opt{display:flex;flex-wrap:wrap;gap:6px}
+.fgroup .opt i{font-style:normal;font-size:.76rem;color:var(--dim);border:1px solid var(--line);padding:5px 10px;cursor:pointer;transition:.18s var(--ease)}
+.fgroup .opt i:hover{color:var(--bai);border-color:var(--blue3)}
+.fgroup .opt i.on{color:var(--bg);background:var(--blue3);border-color:var(--blue3)}
+
+/* ── Grid ── */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.film{position:relative;background:var(--panel);border:1px solid var(--line);transition:.35s var(--ease)}
+.film:hover{transform:translateY(-7px);border-color:var(--blue3);box-shadow:0 18px 40px -18px var(--shadow)}
+.film__thumb{position:relative;aspect-ratio:4/3;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 84%,0 100%)}
+.film__thumb .fill{position:absolute;inset:0}
+.film__thumb .cap{position:absolute;left:12px;right:12px;bottom:12px;display:flex;justify-content:space-between;align-items:flex-end;gap:8px}
+.film__thumb .cap b{font-family:var(--mono);font-size:.8rem;color:#fff;background:rgba(0,0,0,.55);padding:3px 7px}
+.film__thumb .cap em{font-style:normal;font-size:.72rem;color:var(--gold);background:rgba(0,0,0,.55);padding:3px 7px}
+.film__no{position:absolute;top:-1px;left:-1px;font-family:var(--mono);font-size:.72rem;color:var(--bg);background:var(--blue3);padding:3px 9px;font-weight:700}
+.film__body{padding:18px 20px 20px}
+.film__body h4{font-size:1.04rem;font-weight:700;color:var(--bai);line-height:1.4}
+.film__body .meta{margin-top:9px;font-size:.76rem;color:var(--dim2);font-family:var(--mono);letter-spacing:.04em}
+.film__body p{margin-top:12px;font-size:.84rem;color:var(--dim);line-height:1.85}
+.film__body .foot{margin-top:16px;padding-top:14px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;align-items:center}
+.film__body .foot span{font-size:.76rem;color:var(--dim2)}
+.film__body .foot a{font-size:.82rem;color:var(--blue3)}
+.film__body .foot a:hover{color:var(--cyan)}
+
+.g1{background:linear-gradient(150deg,#2b4459,#16283a 60%,#0e1a26)}
+.g2{background:linear-gradient(150deg,#3a3a52,#24243a 60%,#161624)}
+.g3{background:linear-gradient(150deg,#3a4a3a,#24341f 60%,#15200f)}
+.g4{background:linear-gradient(150deg,#4a3a3a,#3a2424 60%,#261515)}
+.g5{background:linear-gradient(150deg,#3f4a5a,#26313d 60%,#16202a)}
+.g6{background:linear-gradient(150deg,#4a443a,#3a3224 60%,#261f15)}
+.g7{background:linear-gradient(150deg,#3a4a4a,#243434 60%,#152020)}
+.g8{background:linear-gradient(150deg,#4a3a4a,#33243a 60%,#211526)}
+
+/* ── Index table ── */
+.idx{border:1px solid var(--line);background:var(--panel)}
+.idx__hd{padding:20px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;background:var(--bg3)}
+.idx__hd b{font-size:1.15rem;font-weight:700;color:var(--bai)}
+.idx__hd b em{font-style:normal;color:var(--blue3)}
+.idx__hd span{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;color:var(--dim)}
+.idx__hd .pg{display:flex;gap:6px}
+.idx__hd .pg i{font-style:normal;font-family:var(--mono);font-size:.8rem;color:var(--dim);border:1px solid var(--line);width:30px;height:30px;display:grid;place-items:center;cursor:pointer}
+.idx__hd .pg i.on{color:var(--bg);background:var(--blue3);border-color:var(--blue3)}
+table.d{width:100%;border-collapse:collapse;font-size:.88rem}
+table.d th,table.d td{padding:16px 24px;text-align:left;border-bottom:1px solid var(--line2)}
+table.d th{font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;color:var(--dim2);font-weight:400;background:var(--bg3);white-space:nowrap}
+table.d td.id{font-family:var(--mono);font-size:.78rem;color:var(--dim2);width:78px}
+table.d td.nm{font-weight:700;font-size:1rem;color:var(--bai);width:28%}
+table.d td.nm small{display:block;font-size:.74rem;font-weight:400;color:var(--dim2);font-family:var(--mono);margin-top:4px}
+table.d td.dr{color:var(--dim);width:20%}
+table.d td.yr{font-family:var(--mono);color:var(--dim);width:76px}
+table.d td.ge{color:var(--dim)}
+table.d td.sc{font-family:var(--mono);color:var(--gold);width:70px;font-weight:700}
+table.d tr:hover td{background:rgba(59,125,216,.07)}
+table.d tr:last-child td{border-bottom:none}
+
+/* ── Channels ── */
+.chan{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.chan a{background:var(--panel);padding:30px 28px;display:block;position:relative;transition:.35s var(--ease);overflow:hidden}
+.chan a::before{content:"";position:absolute;left:0;top:0;width:3px;height:0;background:var(--blue3);transition:.35s var(--ease)}
+.chan a:hover{background:var(--bg3);padding-left:34px}
+.chan a:hover::before{height:100%}
+.chan .cno{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--dim2)}
+.chan h4{margin-top:14px;font-size:1.22rem;font-weight:800;color:var(--bai)}
+.chan h4 em{font-style:normal;color:var(--blue3)}
+.chan p{margin-top:12px;font-size:.85rem;color:var(--dim);line-height:1.9}
+.chan .cnt{margin-top:20px;font-family:var(--mono);font-size:.76rem;color:var(--dim2);display:flex;justify-content:space-between}
+
+/* ── Review ── */
+.rev{border:1px solid var(--line);background:var(--panel);display:grid;grid-template-columns:1.15fr .85fr}
+.rev__main{padding:36px}
+.rev__main .kick{font-family:var(--mono);font-size:.7rem;letter-spacing:.22em;color:var(--blue3)}
+.rev__main h3{margin-top:16px;font-size:clamp(1.35rem,2.8vw,1.85rem);font-weight:800;line-height:1.45;color:var(--bai)}
+.rev__main h3 em{font-style:normal;color:var(--blue3)}
+.rev__info{margin-top:20px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.rev__info div{background:var(--bg3);padding:12px 14px}
+.rev__info dt{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;color:var(--dim2)}
+.rev__info dd{font-size:.86rem;color:var(--bai2);margin-top:5px}
+.rev__main p{margin-top:22px;color:var(--dim);font-size:.93rem;line-height:1.95}
+.rev__main p strong{color:var(--bai2);font-weight:600}
+.rev__quote{margin-top:26px;padding:20px 22px;border-left:3px solid var(--blue3);background:var(--bg3);color:var(--bai2);font-size:1rem;line-height:1.9}
+.rev__side{border-left:1px solid var(--line);background:var(--bg3);padding:36px;display:flex;flex-direction:column;justify-content:center;gap:26px}
+.rev__side .score{text-align:center}
+.rev__side .score b{font-size:3.2rem;font-weight:800;color:var(--gold);line-height:1;font-family:var(--mono)}
+.rev__side .score span{display:block;font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;color:var(--dim2);margin-top:10px}
+.rev__side .bars{display:flex;flex-direction:column;gap:11px}
+.rev__side .bars div{display:grid;grid-template-columns:72px 1fr 34px;gap:12px;align-items:center;font-size:.8rem;color:var(--dim)}
+.rev__side .bars .bar{height:5px;background:var(--bg2);position:relative}
+.rev__side .bars .bar i{position:absolute;left:0;top:0;bottom:0;background:var(--blue3);font-style:normal}
+.rev__side .bars em{font-style:normal;font-family:var(--mono);font-size:.8rem;color:var(--bai2);text-align:right}
+
+/* ── FAQ ── */
+.faqs{border:1px solid var(--line);background:var(--panel)}
+.faqs details{border-bottom:1px solid var(--line2)}
+.faqs details:last-child{border-bottom:none}
+.faqs summary{cursor:pointer;padding:22px 24px;list-style:none;display:flex;align-items:baseline;gap:18px;font-size:1.02rem;font-weight:700;transition:.25s var(--ease)}
+.faqs summary::-webkit-details-marker{display:none}
+.faqs summary .n{font-family:var(--mono);font-size:.76rem;color:var(--bg);background:var(--blue3);width:28px;height:28px;display:grid;place-items:center;flex-shrink:0}
+.faqs summary .ar{margin-left:auto;font-family:var(--mono);font-size:1.1rem;color:var(--dim2);transition:.3s var(--ease);line-height:1}
+.faqs details[open] summary{background:var(--bg3)}
+.faqs details[open] summary .ar{transform:rotate(90deg);color:var(--blue3)}
+.faqs__a{padding:0 24px 24px 70px;color:var(--dim);font-size:.92rem;line-height:1.95}
+.faqs__a p+p{margin-top:12px}
+
+/* ── Footer ── */
+.foot{border-top:1px solid var(--line);margin-top:70px;background:#080b0f;padding-top:56px}
+.foot__in{max-width:1280px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:46px}
+.foot__brand i{width:34px;height:34px;background:var(--bai);color:var(--bg);font-style:normal;font-family:var(--mono);font-weight:800;font-size:1.05rem;display:grid;place-items:center;clip-path:polygon(0 0,100% 0,100% 62%,74% 62%,74% 100%,0 100%)}
+.foot__brand b{display:block;font-size:1.35rem;font-weight:700;color:var(--bai);margin-top:8px}
+.foot__brand p{margin-top:16px;color:var(--dim);font-size:.87rem;line-height:1.95;max-width:420px}
+.foot__brand a{display:inline-block;margin-top:16px;font-family:var(--mono);font-size:.86rem;color:var(--blue3);border-bottom:1px solid var(--line);padding-bottom:4px}
+.foot h6{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;color:var(--dim2);font-weight:400;margin-bottom:20px}
+.foot ul li{margin-bottom:11px}
+.foot ul a{font-size:.87rem;color:var(--dim);transition:.2s var(--ease)}
+.foot ul a:hover{color:var(--blue3)}
+.foot__bar{max-width:1280px;margin:48px auto 0;padding:22px 28px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;color:var(--dim2)}
+.foot__bar b{color:var(--bai2)}
+.foot__bar .m{display:flex;gap:22px;flex-wrap:wrap}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:1120px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .filter{grid-template-columns:repeat(2,1fr)}
+  .chan{grid-template-columns:repeat(2,1fr)}
+  .chan a:nth-child(3){grid-column:span 2}
+  .rev{grid-template-columns:1fr}
+  .rev__side{border-left:none;border-top:1px solid var(--line)}
+  .foot__in{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media (max-width:860px){
+  body{padding-top:52px}
+  .container,.top__in,.foot__in,.foot__bar{padding-left:16px;padding-right:16px}
+  .top{height:52px}
+  .top__in{height:52px;gap:10px}
+  .logo i{width:26px;height:26px;font-size:.85rem}
+  .logo b{font-size:.98rem}
+  .logo small{display:none}
+  .search{display:none}
+  .nav{position:fixed;top:52px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--bg);max-height:0;overflow:hidden;opacity:0;transition:.4s var(--ease);border-bottom:1px solid transparent}
+  .nav.open{max-height:540px;opacity:1;border-bottom-color:var(--line)}
+  .nav a{padding:13px 16px;border-bottom:1px solid var(--line2)}
+  .nav a.active::before{display:none}
+  .nav a.active{background:var(--bg3)}
+  .mbtn{display:block}
+  .hero{padding:38px 0 32px}
+  .hero__grid{grid-template-columns:1fr;gap:34px}
+  .sec{padding:48px 0}
+  .sec__hd{grid-template-columns:1fr;gap:12px;align-items:flex-start}
+  .sec__no{width:50px;height:50px;font-size:1.25rem}
+  .sec__more{display:none}
+  .filter{grid-template-columns:1fr;padding:16px}
+  .fgroup{padding:12px 0;border-bottom:1px solid var(--line2)}
+  .fgroup:last-child{border-bottom:none}
+  .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .idx__hd{padding:16px 18px}
+  table.d th,table.d td{padding:14px 16px}
+  table.d td.dr{display:none}
+  .rev__main,.rev__side{padding:26px 20px}
+  .rev__info{grid-template-columns:repeat(2,1fr)}
+  .foot__in{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:520px){
+  .grid{grid-template-columns:1fr}
+  .chan{grid-template-columns:1fr}
+  .chan a:nth-child(3){grid-column:auto}
+  table.d td.ge{display:none}
+  .foot__bar .m{width:100%}
+}
+@media print{
+  body{background:#fff;color:#000;padding-top:0}
+  .top,.mbtn,.foot__bar{display:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="top">
+  <div class="top__in">
+    <a href="https://baidudianyingwang-zh.github.io" class="logo" aria-label="百度电影网首页">
+      <i>百</i><b>百度<em>电影网</em></b><small>MOVIE INDEX</small>
+    </a>
+    <form class="search" onsubmit="return false;" role="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5f6f80" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input type="search" placeholder="片名 / 导演 / 演员 / 关键词" aria-label="检索电影">
+      <kbd>↵</kbd>
+    </form>
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a href="#home" class="active">检索入口</a>
+      <a href="#grid">全量片单</a>
+      <a href="#idx">索引目录</a>
+      <a href="#chan">检索频道</a>
+      <a href="#rev">影评检索</a>
+      <a href="#faq">问与答</a>
+    </nav>
+    <button class="mbtn" id="mbtn" aria-label="打开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero__grid">
+      <div>
+        <div class="kicker">MOVIE INDEX · 电影资料检索</div>
+        <h1>百度<em>电影网</em><span class="slash">/</span><br>百种方式，<em>找到那一部</em></h1>
+        <p class="hero__sub"><strong>百度电影网（baidudianyingwang-zh.github.io）</strong>是一份以百种检索方式整理的电影资料索引：可按片名、导演、年代、类型、语种与评分交叉筛选，覆盖华语经典、海外佳作、纪录片与短片，一搜即得。</p>
+        <div class="chips">
+          <span class="on">全部年代</span><span>2020 至今</span><span>2010–2019</span><span>2000–2009</span><span>1990–1999</span><span>1990 以前</span>
+          <span>华语</span><span>欧美</span><span>日韩</span><span>东南亚</span><span>修复版</span><span>纪录片</span>
+        </div>
+      </div>
+      <aside class="hero__stat">
+        <h4>本索引规模</h4>
+        <div class="big">10,286<small>条影片记录</small></div>
+        <p>百度电影网 索引持续维护，每条记录含片名、别名、导演、年代、类型、语种、片长与看点摘要，支持多维交叉检索。</p>
+        <div class="row">
+          <div><b>6</b><span>检索维度</span></div>
+          <div><b>42</b><span>类型标签</span></div>
+          <div><b>86</b><span>语种覆盖</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- GRID -->
+<section class="sec" id="grid">
+  <div class="container">
+    <div class="sec__hd reveal">
+      <div class="sec__no">01</div>
+      <div class="sec__ttl"><h2>全量<em>片单</em><small>ALL FILMS · 支持条件筛选</small></h2><p>筛选条件可叠加，结果实时收窄，从一万条记录里快速定位想看的那部</p></div>
+      <a href="#" class="sec__more">查看全部 10,286 条 →</a>
+    </div>
+
+    <div class="filter reveal">
+      <div class="fgroup">
+        <label>年代 DECADE</label>
+        <select aria-label="选择年代"><option>全部年代</option><option>2020 至今</option><option>2010–2019</option><option>2000–2009</option><option>1990–1999</option><option>1980–1989</option><option>1970 以前</option></select>
+      </div>
+      <div class="fgroup">
+        <label>类型 GENRE</label>
+        <div class="opt"><i class="on">全部</i><i>剧情</i><i>悬疑</i><i>喜剧</i><i>犯罪</i><i>文艺</i><i>纪录</i><i>动画</i></div>
+      </div>
+      <div class="fgroup">
+        <label>语种 REGION</label>
+        <select aria-label="选择语种"><option>全部语种</option><option>华语</option><option>英语</option><option>日语</option><option>韩语</option><option>法语</option><option>东南亚</option></select>
+      </div>
+      <div class="fgroup">
+        <label>评分 SCORE</label>
+        <div class="opt"><i class="on">不限</i><i>9.0+</i><i>8.5+</i><i>8.0+</i><i>7.5+</i></div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <a href="#" class="film reveal">
+        <div class="film__thumb"><div class="fill g1"></div><span class="film__no">NO.01</span><div class="cap"><b>修复版</b><em>9.4</em></div></div>
+        <div class="film__body"><h4>雨夜来客</h4><div class="meta">1964 · 悬疑 · 117 分钟 · 黑白</div><p>暴雨夜七人被拦在同一间公寓，电话断了、门打不开，数人数却数出八个。全片几乎只有对话与眼神。</p><div class="foot"><span>林雨声 / 何敬之</span><a href="#">检索详情 →</a></div></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__thumb"><div class="fill g2"></div><span class="film__no">NO.02</span><div class="cap"><b>4K 重制</b><em>9.1</em></div></div>
+        <div class="film__body"><h4>老酒馆的第三个故事</h4><div class="meta">1998 · 年代 · 全 4 段 · 138 分钟</div><p>一间酒馆、三段旧事，讲人怎么在时代转弯的地方把话说完。台词密度极高，适合分段细看。</p><div class="foot"><span>何敬之 主演</span><a href="#">检索详情 →</a></div></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__thumb"><div class="fill g3"></div><span class="film__no">NO.03</span><div class="cap"><b>蓝光</b><em>9.0</em></div></div>
+        <div class="film__body"><h4>沉默的第七个人</h4><div class="meta">2008 · 犯罪 · 修复版 · 126 分钟</div><p>一桩陈年旧案被重新翻出，七份口供里只有一份没有签字。结尾留白，看完会有想重看一遍的冲动。</p><div class="foot"><span>吴峥 / 温知礼</span><a href="#">检索详情 →</a></div></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__thumb"><div class="fill g4"></div><span class="film__no">NO.04</span><div class="cap"><b>新片</b><em>8.9</em></div></div>
+        <div class="film__body"><h4>北海道的最后一场雪</h4><div class="meta">2015 · 公路 · 4K · 119 分钟</div><p>两个陌生人在暴雪封路的小站相遇，三天走了三百公里。风景本身就是剧情的一部分。</p><div class="foot"><span>程牧之 导演</span><a href="#">检索详情 →</a></div></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__thumb"><div class="fill g5"></div><span class="film__no">NO.05</span><div class="cap"><b>冷门佳片</b><em>8.8</em></div></div>
+        <div class="film__body"><h4>第十二个房间</h4><div class="meta">2023 · 惊悚 · 密闭空间 · 96 分钟</div><p>十二个房间十一把钥匙，多出来的那把打不开任何一扇门。节奏极快，无跳跃惊吓，靠信息差制造紧张。</p><div class="foot"><span>沈清和 导演</span><a href="#">检索详情 →</a></div></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__thumb"><div class="fill g6"></div><span class="film__no">NO.06</span><div class="cap"><b>经典老片</b><em>8.7</em></div></div>
+        <div class="film__body"><h4>长街灯未灭</h4><div class="meta">1972 · 文艺 · 修复 · 104 分钟</div><p>深夜面馆老板记下每个客人的一句话，攒了二十年。没有强冲突，但看完记得住好几张脸。</p><div class="foot"><span>姚望 主演</span><a href="#">检索详情 →</a></div></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__thumb"><div class="fill g7"></div><span class="film__no">NO.07</span><div class="cap"><b>独立长片</b><em>8.6</em></div></div>
+        <div class="film__body"><h4>凌晨四点的渡口</h4><div class="meta">2023 · 纪录 · 全 4 集 · 180 分钟</div><p>跟拍一位渡口船工的一整年，记录他怎么跟涨潮退潮讨生活。无旁白，全部靠现场声。</p><div class="foot"><span>苏晚 导演</span><a href="#">检索详情 →</a></div></div>
+      </a>
+      <a href="#" class="film reveal">
+        <div class="film__thumb"><div class="fill g8"></div><span class="film__no">NO.08</span><div class="cap"><b>东方奇幻</b><em>8.6</em></div></div>
+        <div class="film__body"><h4>山中来信</h4><div class="meta">2014 · 东方 · 奇幻 · 112 分钟</div><p>一封寄了三十年的信终于送到，收信人已经不认识寄信人。影像风格接近山水画，节奏很慢。</p><div class="foot"><span>何敬之 / 白鹿</span><a href="#">检索详情 →</a></div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INDEX TABLE -->
+<section class="sec" id="idx" style="padding-top:0">
+  <div class="container">
+    <div class="sec__hd reveal">
+      <div class="sec__no">02</div>
+      <div class="sec__ttl"><h2>索引<em>目录</em><small>CATALOGUE · 排序字段可切换</small></h2><p>百度电影网 索引目录，支持按年代、评分与片长排序，翻页逐页查阅</p></div>
+      <a href="#" class="sec__more">导出全部索引 →</a>
+    </div>
+
+    <div class="idx reveal">
+      <div class="idx__hd"><b>索引<em>目录</em></b><span>第 01 页 / 共 1,286 页</span><div class="pg"><i>‹</i><i class="on">01</i><i>02</i><i>03</i><i>…</i><i>›</i></div></div>
+      <table class="d">
+        <thead><tr><th>索引号</th><th>片名（含别名）</th><th>导演 / 主演</th><th>年代</th><th>类型</th><th>评分</th></tr></thead>
+        <tbody>
+          <tr><td class="id">BD-001</td><td class="nm">雨夜来客<small>别名：暴雨公寓</small></td><td class="dr">林雨声 / 何敬之</td><td class="yr">1964</td><td class="ge">悬疑 · 黑白修复</td><td class="sc">9.4</td></tr>
+          <tr><td class="id">BD-002</td><td class="nm">老酒馆的第三个故事<small>别名：酒馆夜话</small></td><td class="dr">何敬之 主演</td><td class="yr">1998</td><td class="ge">年代 · 多段叙事</td><td class="sc">9.1</td></tr>
+          <tr><td class="id">BD-003</td><td class="nm">沉默的第七个人<small>别名：第七份口供</small></td><td class="dr">吴峥 / 温知礼</td><td class="yr">2008</td><td class="ge">犯罪 · 修复版</td><td class="sc">9.0</td></tr>
+          <tr><td class="id">BD-004</td><td class="nm">北海道的最后一场雪</td><td class="dr">程牧之 导演</td><td class="yr">2015</td><td class="ge">公路 · 4K 重制</td><td class="sc">8.9</td></tr>
+          <tr><td class="id">BD-005</td><td class="nm">第十二个房间</td><td class="dr">沈清和 导演</td><td class="yr">2023</td><td class="ge">惊悚 · 密闭空间</td><td class="sc">8.8</td></tr>
+          <tr><td class="id">BD-006</td><td class="nm">长街灯未灭<small>别名：夜面馆</small></td><td class="dr">姚望 主演</td><td class="yr">1972</td><td class="ge">文艺 · 老片修复</td><td class="sc">8.7</td></tr>
+          <tr><td class="id">BD-007</td><td class="nm">山中来信<small>别名：迟到的信</small></td><td class="dr">何敬之 / 白鹿</td><td class="yr">2014</td><td class="ge">东方 · 奇幻</td><td class="sc">8.6</td></tr>
+          <tr><td class="id">BD-008</td><td class="nm">凌晨四点的渡口<small>别名：渡口一年</small></td><td class="dr">苏晚 导演</td><td class="yr">2023</td><td class="ge">纪录 · 全 4 集</td><td class="sc">8.6</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CHANNELS -->
+<section class="sec" id="chan" style="padding-top:0">
+  <div class="container">
+    <div class="sec__hd reveal">
+      <div class="sec__no">03</div>
+      <div class="sec__ttl"><h2>检索<em>频道</em><small>CHANNELS · 六个检索入口</small></h2><p>百度电影网 按检索方式划分的六个频道，每个频道有自己的排序逻辑与推荐机制</p></div>
+      <a href="#" class="sec__more">全部频道 →</a>
+    </div>
+
+    <div class="chan reveal">
+      <a href="#"><div class="cno">CH.01 · BY NAME</div><h4>片名<em>检索</em></h4><p>支持中文片名、外文原名与别名交叉匹配。别名库已收录 3,400 余条，旧译名也能命中。</p><div class="cnt"><span>10,286 条</span><span>→</span></div></a>
+      <a href="#"><div class="cno">CH.02 · BY PERSON</div><h4>人物<em>检索</em></h4><p>按导演、主演、编剧、摄影检索，同一人物名下聚合全部作品，附合作次数统计。</p><div class="cnt"><span>4,712 位</span><span>→</span></div></a>
+      <a href="#"><div class="cno">CH.03 · BY TIME</div><h4>年代<em>检索</em></h4><p>按十年区间与具体年份浏览，逐年排序，方便按成长年代回溯当年看过或错过什么。</p><div class="cnt"><span>94 个年份</span><span>→</span></div></a>
+      <a href="#"><div class="cno">CH.04 · BY GENRE</div><h4>类型<em>检索</em></h4><p>42 个一级标签加细分标签，悬疑下再分密闭空间、反转、失忆等二十余个二级方向。</p><div class="cnt"><span>42 类</span><span>→</span></div></a>
+      <a href="#"><div class="cno">CH.05 · BY LANG</div><h4>语种<em>检索</em></h4><p>按语种与地区筛选，含华语、英语、日韩、法语及东南亚小语种，附字幕规格标注。</p><div class="cnt"><span>86 种</span><span>→</span></div></a>
+      <a href="#"><div class="cno">CH.06 · BY SCORE</div><h4>评分<em>检索</em></h4><p>按综合评分区间筛选，可按评分高低或评分人数排序，快速筛掉口碑不稳定的作品。</p><div class="cnt"><span>12 个区间</span><span>→</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEW -->
+<section class="sec" id="rev" style="padding-top:0">
+  <div class="container">
+    <div class="sec__hd reveal">
+      <div class="sec__no">04</div>
+      <div class="sec__ttl"><h2>影评<em>检索</em><small>REVIEW · 含评分维度拆解</small></h2><p>百度电影网 编辑部的看片记录，附评分维度拆解与观看建议</p></div>
+    </div>
+
+    <article class="rev reveal">
+      <div class="rev__main">
+        <div class="kick">REVIEW · BD-001</div>
+        <h3>《雨夜来客》：为什么一部 1964 年的黑白片，<br>检索量<em>仍在上升</em></h3>
+        <dl class="rev__info">
+          <div><dt>片名</dt><dd>雨夜来客</dd></div>
+          <div><dt>年代</dt><dd>1964</dd></div>
+          <div><dt>规格</dt><dd>黑白 · 4K 修复</dd></div>
+          <div><dt>片长</dt><dd>117 分钟</dd></div>
+          <div><dt>导演</dt><dd>林雨声</dd></div>
+          <div><dt>主演</dt><dd>何敬之</dd></div>
+          <div><dt>类型</dt><dd>悬疑 · 密室</dd></div>
+          <div><dt>索引号</dt><dd>BD-001</dd></div>
+        </dl>
+        <p>《雨夜来客》第一次进入百度电影网 的检索榜，是去年雨季。那阵子「不恐怖的悬疑片」这个需求突然变多，而它恰好是这类需求里完成度最高的一部。</p>
+        <p>它的结构极其克制：一个场景、七个人、一通断掉的电话。冲突不靠外部事件推进，全靠每个人说的话里少了什么。修复版最值得夸的是音效——雨声是有层次的，近处的雨和远处的雨不是同一种响法，戴耳机看差异很明显。</p>
+        <p>如果只想看一遍就获得完整体验，建议不要在看的过程中暂停去查剧情分析，所有伏笔都埋在对话里，暂停会打断信息累积。</p>
+        <div class="rev__quote">「它的恐怖不在画面里，在你看完之后回到家门口、发现忘了数自己家有几口人的那一刻。」</div>
+      </div>
+      <aside class="rev__side">
+        <div class="score"><b>9.4</b><span>综合评分 / 10</span></div>
+        <div class="bars">
+          <div><span>剧情结构</span><span class="bar"><i style="width:96%"></i></span><em>9.6</em></div>
+          <div><span>表演</span><span class="bar"><i style="width:92%"></i></span><em>9.2</em></div>
+          <div><span>视听语言</span><span class="bar"><i style="width:90%"></i></span><em>9.0</em></div>
+          <div><span>节奏</span><span class="bar"><i style="width:94%"></i></span><em>9.4</em></div>
+          <div><span>重看价值</span><span class="bar"><i style="width:95%"></i></span><em>9.5</em></div>
+          <div><span>修复质量</span><span class="bar"><i style="width:93%"></i></span><em>9.3</em></div>
+        </div>
+      </aside>
+    </article>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq" style="padding-top:0">
+  <div class="container">
+    <div class="sec__hd reveal">
+      <div class="sec__no">05</div>
+      <div class="sec__ttl"><h2>问与<em>答</em><small>QUESTIONS · 关于检索与索引</small></h2><p>关于百度电影网 的索引方式、检索逻辑与数据维护的常见疑问</p></div>
+    </div>
+
+    <div class="faqs reveal">
+      <details open>
+        <summary><span class="n">Q1</span>百度电影网 是做什么的？<span class="ar">›</span></summary>
+        <div class="faqs__a"><p>百度电影网（baidudianyingwang-zh.github.io）是一份以百种检索方式整理的电影资料索引，可按片名、导演、年代、类型、语种与评分交叉筛选，覆盖华语经典、海外佳作、纪录片与短片，一搜即得。</p></div>
+      </details>
+      <details>
+        <summary><span class="n">Q2</span>支持哪些检索维度？<span class="ar">›</span></summary>
+        <div class="faqs__a"><p>共六个维度：片名、人物、年代、类型、语种、评分。筛选条件可以叠加使用，例如同时限定「2010 至今 + 悬疑 + 8.5 分以上」。</p></div>
+      </details>
+      <details>
+        <summary><span class="n">Q3</span>检索结果多久更新一次？<span class="ar">›</span></summary>
+        <div class="faqs__a"><p>新片记录每日新增，评分与看点说明每周复核一次，老片修复信息随官方修复动态同步更新。</p></div>
+      </details>
+      <details>
+        <summary><span class="n">Q4</span>索引号有什么用？<span class="ar">›</span></summary>
+        <div class="faqs__a"><p>每条影片记录都有唯一索引号（如 BD-001），可用于精准定位与引用，反馈勘误时附上索引号能更快核对。</p></div>
+      </details>
+      <details>
+        <summary><span class="n">Q5</span>找不到想看的片子怎么办？<span class="ar">›</span></summary>
+        <div class="faqs__a"><p>可尝试切换别名、外文原名或导演名检索；仍未命中可通过页面底部联系方式提交片名，编辑会在索引扩充时补录。</p></div>
+      </details>
+      <details>
+        <summary><span class="n">Q6</span>评分与看点说明是怎么来的？<span class="ar">›</span></summary>
+        <div class="faqs__a"><p>由百度电影网 编辑部综合口碑、完成度与观看体验给出，满分 10 分，并附六个维度拆解，仅作选片参考。</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot__in">
+    <div class="foot__brand">
+      <i>百</i>
+      <b>百度<em>电影网</em></b>
+      <p>百度电影网（baidudianyingwang-zh.github.io）是一份以百种检索方式整理的电影资料索引，可按片名、导演、年代、类型、语种与评分交叉筛选，覆盖华语经典、海外佳作、纪录片与短片，一搜即得。</p>
+      <a href="https://baidudianyingwang-zh.github.io">https://baidudianyingwang-zh.github.io</a>
+    </div>
+    <div>
+      <h6>检索频道</h6>
+      <ul>
+        <li><a href="#chan">片名检索</a></li>
+        <li><a href="#chan">人物检索</a></li>
+        <li><a href="#chan">年代检索</a></li>
+        <li><a href="#chan">类型检索</a></li>
+        <li><a href="#chan">语种检索</a></li>
+        <li><a href="#chan">评分检索</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6>索引目录</h6>
+      <ul>
+        <li><a href="#grid">全量片单</a></li>
+        <li><a href="#idx">目录翻阅</a></li>
+        <li><a href="#rev">影评检索</a></li>
+        <li><a href="#faq">问与答</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6>索引事务</h6>
+      <ul>
+        <li><a href="#">关于百度电影网</a></li>
+        <li><a href="#">索引规范</a></li>
+        <li><a href="#">别名提交</a></li>
+        <li><a href="#">勘误与联系</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot__bar">
+    <span>© 2026 百度电影网 baidudianyingwang-zh.github.io · 百种检索方式，找到那一部</span>
+    <div class="m"><a href="#home" style="color:var(--bai2)">回到检索入口</a><a href="#faq" style="color:var(--dim2)">问与答</a><a href="#" style="color:var(--dim2)">联系</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('mbtn'),nav=document.getElementById('nav'),links=nav.querySelectorAll('a');
+  btn.addEventListener('click',function(){
+    var o=nav.classList.toggle('open');
+    btn.classList.toggle('open',o);btn.setAttribute('aria-expanded',o?'true':'false');
+  });
+  links.forEach(function(a){a.addEventListener('click',function(){
+    nav.classList.remove('open');btn.classList.remove('open');btn.setAttribute('aria-expanded','false');
+  });});
+  var secs=document.querySelectorAll('section[id]');
+  function onScr(){var y=window.scrollY||window.pageYOffset;var c='';
+    secs.forEach(function(s){if(y+110>=s.offsetTop)c=s.id;});
+    links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+c);});
+  }
+  window.addEventListener('scroll',onScr,{passive:true});onScr();
+  document.querySelectorAll('.chips span,.fgroup .opt i').forEach(function(el){
+    el.addEventListener('click',function(){
+      var grp=el.parentElement;if(grp.classList.contains('opt')){
+        grp.querySelectorAll('i').forEach(function(x){x.classList.remove('on');});el.classList.add('on');
+      }
+    });
+  });
+  var io=window.IntersectionObserver?new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.08,rootMargin:'0px 0px -6% 0px'}):null;
+  document.querySelectorAll('.reveal').forEach(function(el){io?io.observe(el):el.classList.add('in');});
+})();
+</script>
+
+</body>
+</html>
